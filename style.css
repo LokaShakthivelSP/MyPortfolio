@@ -1,0 +1,79 @@
+html{
+    
+    margin:2%;
+    border:gray solid;
+    color:gray;
+    background-color:rgb(231, 231, 231);
+    font-family: Century gothic;
+}
+p{
+    font-size: 20px;
+}
+
+header, footer{
+    background-color:lightgray;
+    padding: 5px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 45px;
+}
+header p{
+    font-size: 25px;
+}
+.menu a{
+    padding: 3px;
+    margin: 5px;
+    text-decoration: underline;
+    font-size: 20px;
+    color:gray
+}
+.menu a:hover{
+    color:darkgray;
+}
+a:link{
+    color:darkgreen;
+}
+a:visited{
+    color:green;
+}
+.mainhead{
+    text-align: center;
+}
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin:1% 5%;
+    text-align: center;
+    position: relative;
+}
+main a{
+    text-decoration: none;
+    color: gray;
+    margin: 1% 5%;
+}
+.item p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.item:hover p{
+    opacity:1;
+}
+.item:hover img{
+    opacity:0.33;
+}
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item{
+    position: relative;
+}
