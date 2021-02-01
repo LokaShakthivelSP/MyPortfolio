@@ -1,5 +1,4 @@
 html{
-    
     margin:2%;
     border:gray solid;
     color:gray;
@@ -9,13 +8,11 @@ html{
 p{
     font-size: 20px;
 }
-
 header, footer{
     background-color:lightgray;
     padding: 5px;
     text-align: center;
 }
-
 header h1{
     font-size: 45px;
 }
@@ -29,14 +26,8 @@ header p{
     font-size: 20px;
     color:gray
 }
-.menu a:hover{
+.menu a:hover,main a:hover{
     color:darkgray;
-}
-a:link{
-    color:darkgreen;
-}
-a:visited{
-    color:green;
 }
 .mainhead{
     text-align: center;
@@ -44,36 +35,33 @@ a:visited{
 main{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: baseline;
-    margin:1% 5%;
+    margin:5% 6%;
     text-align: center;
     position: relative;
 }
 main a{
     text-decoration: none;
     color: gray;
-    margin: 1% 5%;
+    margin: 2% 5%;
 }
+main img:hover{
+    opacity: 0.5;
+}
+
+
+/*
 .item p{
-    position:absolute;
-    top:50%;
-    left:50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%,-50%);
     opacity: 0;
 }
-.item:hover p{
-    opacity:1;
+.item img:hover{
+    opacity: 0.33;
 }
-.item:hover img{
-    opacity:0.33;
-}
-.grid{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.item{
-    position: relative;
+.item img:hover p{
+    opacity: 1;
 }
